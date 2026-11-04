@@ -1,0 +1,7 @@
+- name: include-vs-import
+  hosts: local
+  connection: local
+  roles:
+  - role-1
+
+# this main.yaml is call to role-1 and common also
