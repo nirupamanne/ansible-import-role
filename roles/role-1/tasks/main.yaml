@@ -10,7 +10,8 @@
 #   - Suresh
 
 - name: call common role
-  import_role:
+  #import_role:
+  include_role:
     name: common
   when: ansible_os_family == "RedHat"
   tags:
