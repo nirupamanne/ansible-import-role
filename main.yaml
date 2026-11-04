@@ -5,3 +5,4 @@
   - role-1
 
 # this main.yaml is call to role-1 and common also
+#ansible-playbook main.yaml -i inventory.ini->Run command
