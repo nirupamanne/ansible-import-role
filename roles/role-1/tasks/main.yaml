@@ -1,10 +1,20 @@
+# - name: call common role
+#   #include_role:
+#   import_role:
+#     name: common
+#   when: OS == "RedHat"
+#   tags:
+#   - hi
+#   loop:
+#   - Ramesh
+#   - Suresh
+
 - name: call common role
-  #include_role:
-  import_role:
+  include_role:
     name: common
-  when: OS == "RedHat"
+  when: ansible_os_family == "RedHat"
   tags:
-  - hi
+    - hi
   loop:
-  - Ramesh
-  - Suresh
+    - Ramesh
+    - Suresh
